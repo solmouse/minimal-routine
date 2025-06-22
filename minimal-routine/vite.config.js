@@ -1,12 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-// export default defineConfig({
-//  plugins: [react()],
-//})
-
 export default defineConfig({
   plugins: [react()],
-  base: '/minimal-routine/', // ← 레포 이름으로 꼭 바꿔줘!
-});
+  base: '/minimal-routine/', // ← repo 이름과 정확히 일치해야 함!
+})

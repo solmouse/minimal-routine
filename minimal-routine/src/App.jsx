@@ -57,7 +57,7 @@ function App() {
 
   return (
     <main className="max-w-md mx-auto p-4 text-lg">
-      <img src="./logo.png" alt="미니멀루틴 로고" className="w-40 mx-auto mb-4" />
+      <img src="/minimal-routine/logo.png" alt="미니멀루틴 로고" className="w-40 mx-auto mb-4" />
     
       {editing === null ? (
         <div className="space-y-3">

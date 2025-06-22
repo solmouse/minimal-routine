@@ -1,0 +1,16 @@
+{
+    "name": "미니멀루틴",
+    "short_name": "루틴",
+    "icons": [
+      {
+        "src": "/minimal-routine/logo_cat.png",
+        "sizes": "122x122",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/minimal-routine/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#60a5fa"
+  }
+  

@@ -18,7 +18,7 @@
 
 /* 전역 폰트 설정만 남기기 */
 :root {
-  font-family: Ownglyph_ParkDaHyun, system-ui, sans-serif;
+  font-family: 'Ownglyph_ParkDaHyun', system-ui, sans-serif;
 }
 
 /* body 기본 여백 제거 */
@@ -30,13 +30,30 @@ body {
 .react-calendar {
   width: 100%;
   border: none;
-  font-family: inherit;
+}
+
+.react-calendar,
+.react-calendar * {
+  font-family: 'Pretendard-Regular', system-ui, sans-serif !important;
 }
 
 .react-calendar__tile {
   padding: 10px 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
-  aspect-ratio: 1/1;
+  white-space: nowrap;  /* 줄바꿈 방지 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden; /* 혹시 숫자 겹침 방지 */
+}
+
+.react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr); /* 7일 고정 */
+  gap: 4px;
 }
 
 /* 오늘 날짜 테두리 제거 */

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Ownglyph_ParkDaHyun';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 전역 폰트 설정만 남기기 */
+:root {
+  font-family: Ownglyph_ParkDaHyun, system-ui, sans-serif;
+}
+
+/* body 기본 여백 제거 */
+body {
+  margin: 0;
+}
+
+/* react-calendar 기본 스타일 커스터마이징 */
+.react-calendar {
+  width: 100%;
+  border: none;
+  font-family: inherit;
+}
+
+.react-calendar__tile {
+  padding: 10px 0;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+/* 오늘 날짜 테두리 제거 */
+.react-calendar__tile--now {
+  background: white !important;
+  border: none !important;
+  color: black !important;
+}
+
+/* 시작일자에만 파란 테두리 표시 */
+.start-date {
+  border: 2px solid #60a5fa !important; /* blue-400 */
+  border-radius: 50%;
+}
+
+
+/* 선택된 날짜 (내가 누른 날) */
+.selected-date {
+  background-color: #4ade80 !important; /* green-400 */
+  color: black !important;
+  font-weight: bold;
+}
+
+/* 선택 안 된 날 흐리게 */
+.inactive-date {
+  color: #9ca3af; /* gray-400 */
+  opacity: 0.7;
+}

@@ -1,0 +1,8 @@
+/* 필요 없는 기본 CSS 삭제 */
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: left;
+}
